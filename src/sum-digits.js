@@ -30,10 +30,8 @@ function getSumOfDigits(n) {
 
   return n;
 
-
 }
 
-console.log(getSumOfDigits(123));
 
 module.exports = {
   getSumOfDigits
