@@ -28,8 +28,6 @@ function getDNSStats(domains) {
 
   domains.forEach(item => {
     let urlArr = item.split('.').reverse();
-    console.log(urlArr);
-
     let dnsName = '';
 
     urlArr.forEach(it => {
@@ -39,17 +37,11 @@ function getDNSStats(domains) {
       } else {
         dnsObj[dnsName] = 1;
       }
-
     });
-
   });
 
-
   return dnsObj;
-
 }
-
-console.log(getDNSStats(['epam.com', 'info.epam.com']));
 
 module.exports = {
   getDNSStats

@@ -25,19 +25,12 @@ function getMatrixElementsSum(matrix) {
       if(i == 0) sum += matrix[i][j];
       if(i != topRow && matrix[topRow][j] != 0) {
         sum += matrix[i][j];
-        console.log(matrix[i][j])
       }
     }
   }
 
   return sum;
 }
-
-console.log(getMatrixElementsSum([
-  [1, 2, 3, 4],
-  [0, 5, 0, 0],
-  [2, 0, 3, 3],
-]));
 
 module.exports = {
   getMatrixElementsSum
